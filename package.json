@@ -1,0 +1,23 @@
+{
+  "name": "git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andersonribeirodemoraes/curso-git.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersonribeirodemoraes/curso-git/issues"
+  },
+  "homepage": "https://github.com/andersonribeirodemoraes/curso-git#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
