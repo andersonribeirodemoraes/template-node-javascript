@@ -1,4 +1,5 @@
 const usuarioServices = require("../services/usuarios");
+const loginServices = require("../services/login");
 
 const usuarios = [];
 
@@ -17,4 +18,12 @@ exports.salvarUsuario = async function (request, response) {
   );
 
   return response.json(usuarioSalvo);
+};
+
+exports.localizarLogin = async function (request, response) {
+  const { email, senha } = request.body;
+  
+  const loginEncontrado = await loginServices.localizarLogin(email, senha, usuarios) 
+
+  return response.json(loginEncontrado);
 };
